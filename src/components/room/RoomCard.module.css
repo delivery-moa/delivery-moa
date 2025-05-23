@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+.room_name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.room_address {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8em;
+    color: gray;
+}
+.room_user_count {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8em;
+    float: right;
+    color: gray;
+}
+.room_store {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+.room_leader {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.room_card {
+	font-family: 'Noto Sans KR', sans-serif;
+    width: 25%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: bisque;
+    padding: 10px;
+}
+.date {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    font-size: 0.8em;
+    float: right;
+}

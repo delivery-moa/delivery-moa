@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+.chat {
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	padding: 10px;
+	flex-direction: row;
+}
+.date {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: gray;
+	font-size: 0.8em;
+	padding: 0.5em;
+	align-self: flex-end;
+}
+.chat_box {
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	background-color: bisque;
+	flex-direction: column;
+	width: fit-content;
+	overflow: auto;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
