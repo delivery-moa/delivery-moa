@@ -69,13 +69,18 @@ export default function RoomHeader({ room_id }) {
                     const { id: user_id } = await getAuthUser();
                     if(
                         room
+                        && roomJoin
+                        && roomJoin.length > 0 
+                    ) {} else {
+                        return;
+                    }
+                    if(
+                        room
                         && room.leader_id == user_id
                     ) {
                         // 방장인 경우
                         if(
                             room
-                            && roomJoin
-                            && roomJoin.length > 0 
                             && roomJoin.filter((join) => (join.status == '준비 완료')).length > 0
                         ) {
                             setCanLeave(false);
