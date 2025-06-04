@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import supabase from "../config/supabaseClient";
 import styles from "./CashCharge.module.css";
+import getAuthUser from "../functions/auth/GetAuthUser";
+import selectUser from "../functions/user/SelectUser";
 
 export default function CashCharge() {
   const [userId, setUserId] = useState("");
@@ -8,6 +10,8 @@ export default function CashCharge() {
   const [amount, setAmount] = useState("");
   const [selectedAccount, setSelectedAccount] = useState("신한 ****1234");
   const presetAmounts = [10000, 50000, 100000, 1000000];
+
+
 
   // 로그인한 유저 uuid와 캐시 조회
   useEffect(() => {
@@ -35,23 +39,42 @@ export default function CashCharge() {
       alert("올바른 금액을 입력하세요");
       return;
     }
-    const { data, error } = await supabase
-      .from("user")
-      .update({ cash: currentCash + chargeAmount })
-      .eq("id", userId)
-      .select();
+    
+    IMP.request_pay({
+      pg: 'kakaopay',
+      pay_method: 'kakaopay',
+      merchant_uid: `charge_${userId}_${Date.now()}`,
+      name: '배달 모아 충전',
+      amount: chargeAmount,
+      buyer_email: (await getAuthUser())?.email,
+      buyer_name: (await selectUser({ user_id: userId }))[0]?.nickname,
+    }, async function (rsp) {
+      console.log(rsp);
 
-    if (error) {
-      alert("충전에 실패했습니다: " + (error.message || JSON.stringify(error)));
-    } else if (!data || data.length === 0) {
-      alert("충전이 정상적으로 반영되지 않았습니다. (데이터 없음)");
-    } else {
-      alert("충전 완료!");
-      if (window.opener) {
-        window.opener.location.reload();
+      let msg;
+      if (rsp.success) {
+        const { data, error } = await supabase
+          .from("user")
+          .update({ cash: currentCash + chargeAmount })
+          .eq("id", userId)
+          .select();
+        if (error) {
+          alert("충전에 실패했습니다: " + (error.message || JSON.stringify(error)));
+        } else if (!data || data.length === 0) {
+          alert("충전이 정상적으로 반영되지 않았습니다. (데이터 없음)");
+        } else {
+          alert("충전 완료!");
+          if (window.opener) {
+            window.opener.location.reload();
+          }
+          window.close();
+        }
+      } else {
+        msg = '결제에 실패하였습니다.\n에러내용: ' + rsp.error_msg;
+        alert(msg);
       }
-      window.close();
-    }
+    });
+
   };
 
   return (
