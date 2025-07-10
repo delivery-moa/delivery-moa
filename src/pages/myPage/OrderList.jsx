@@ -50,11 +50,8 @@ export default function OrderList() {
         .eq("user_id", userId)
         .order("created_at", { ascending: false })
         .range(from, to);
-
-      setTimeout(() => {
-        setOrders(error ? [] : data);
-        setLoading(false);
-      }, 2000);
+      setOrders(error ? [] : data);
+      setLoading(false);
     };
     fetchOrders();
   }, [userId, currentPage]);
