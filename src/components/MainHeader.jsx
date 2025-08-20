@@ -2,6 +2,8 @@ import styles from "./MainHeader.module.css";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import supabase from "../config/supabaseClient";
+import Hamburger from "../components/Hamburger";
+import CloseRoom from "../components/CloseRoom";
 
 export default function MainHeader({ toggleMenu }) {
     const [nickname, setNickname] = useState("");

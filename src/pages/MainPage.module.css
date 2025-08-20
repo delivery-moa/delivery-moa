@@ -10,7 +10,7 @@ html, main {
 .search_header {
     background-color: #FF6B6B;
     width: 100vw;
-    height: 11.25rem;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +19,14 @@ html, main {
 .search_box {
     display: flex;
     position: relative;
+    width: fit-content;
+    margin: 30px 0;
     flex-direction: column;
     align-items: center;
 }
 
 .search_text {
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 500;
     color: white;
 }
@@ -32,49 +34,49 @@ html, main {
 .search {
     display: flex;
     gap: 0;
-    margin-top: 1.875rem;
+    margin-top: 30px;
 }
 
 .search_value,
 .search_btn {
     box-sizing: border-box;
     vertical-align: top;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1;
 }
 
 .search_value {
-    min-width: 32.375rem;
-    height: 3.3125rem;
+    width: 518px;
+    height: 53px;
     border: 0px;
-    border-radius: 0.625rem 0rem 0rem 0.625rem;
-    padding-left: 1.25rem;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 20px;
 }
 
 .search_value::placeholder {
     color: gray;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .search_btn {
     background-color: #1A535C;
     color: white;
-    width: 4.6875rem;
-    height: 3.3125rem;
+    width: 75px;
+    height: 53px;
     border: 0px;
-    border-radius: 0px 0.625rem 0.625rem 0px;
+    border-radius: 0px 10px 10px 0px;
     cursor: pointer;
 }
 
 .main_container {
-    width: 80rem;
+    width: 1280px;
     display: flex;
     position: relative;
 }
 
 .main_header {
     width: 100%;
-    height: 7.1875rem;
+    height: 115px;
     display: flex;
     justify-content: center;
 
@@ -87,8 +89,8 @@ html, main {
 }
 
 .body_container {
-    width: 80rem;
-    padding: 5rem 1.25rem 0 1.25rem;
+    width: 1280px;
+    padding: 80px 20px 0 20px;
     box-sizing: border-box;
 }
 
@@ -101,7 +103,7 @@ html, main {
 }
 
 .food_category {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -111,26 +113,28 @@ html, main {
 }
 
 .circle_category_wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
-    padding: 1.25rem 1.875rem;
-    gap: 1.875rem;
+    display: flex;
+    padding: 20px 30px;
+    gap: 30px 80px;
+    width: 1240px;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .circle_with_text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 6.25rem;
+    width: 100px;
     transition: transform 0.2s;
 }
 .circle_with_text:hover{
     transform: translateY(-5px);
 }
+
 .circle {
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 100px;
+    height: 100px;
     background-color: white;
     border-radius: 50%;
     box-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
@@ -140,20 +144,21 @@ html, main {
 }
 
 .circle_text {
-    margin-top: 0.5rem;
+    margin-top: 8px;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .gongu_wrap {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding-top: 5rem;
+    width: 100%;
+    padding-top: 80px;
 }
 
 .gongu_list {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -163,17 +168,31 @@ html, main {
 }
 
 .gongu_list_wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr));
-    padding: 1.25rem 0 6.25rem 0;
-    gap: clamp(2rem, 1vw + 0.25rem, 3.5rem);
+    display: flex;
+    padding: 20px 0 100px 0;
+    gap: 60px;
+    width: 1240px;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
+.no_room_message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    height: 295px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
 .gongu_with_text {
     box-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 0.625rem;
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.05); */
+    border-radius: 10px;
     transition: transform 0.2s;
 }
 
@@ -182,8 +201,8 @@ html, main {
 }
 
 .square_img {
-    width: 100%;
-    aspect-ratio: 2.35 / 1;
+    width: 373px;
+    height: 160px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
     object-position: center 80%;
@@ -191,8 +210,8 @@ html, main {
 }
 
 .square {
-    width: 100%;
-    aspect-ratio: 2.8 / 1;
+    width: 373px;
+    height: 135px;
     border-radius: 0 0 10px 10px;
     background-color: white;
     padding: 15px 19px;
@@ -203,7 +222,7 @@ html, main {
 .gongu_date {
     list-style: none;
     display: flex;
-    gap: 0.875rem;
+    gap: 10px;
     font-size: 14px;
     padding-inline-start: 0;
     color: #666666;
@@ -219,7 +238,7 @@ html, main {
 }
 
 .gongu_title {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
@@ -266,46 +285,31 @@ html, main {
     color: #333333;
 }
 
-.no_room_message{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 0.625rem;
-    height: 18.4375rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
 .body_bottom{
     background-color: #F0F6FF;
-    height: auto;
+    height: 360px;
     margin-bottom: 80px;
 }
 .body_bottom_container{
-    max-width: 80rem;
-    width: 100%;
+    width: 1280px;
     position: relative;
     margin: 0 auto;
     padding: 50px 20px;
     box-sizing: border-box;
 }
+
 .popular_text{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 .popular_list_wrap{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
-    gap: 2.5rem;
-    box-sizing: border-box;
+    display: flex;
+    gap: 40px;
 }
 .popular_img{
-    width: 100%;
-    aspect-ratio: 1.8 / 1;
+    width: 216px;
+    height: 120px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
     object-position: center;
@@ -319,9 +323,10 @@ html, main {
 .popular_with_text:hover {
     transform: translateY(-5px);
 }
+
 .popular_square{
-    width: 100%;
-    aspect-ratio: 5 / 1;
+    width: 216px;
+    height: 72px;
     border-radius: 0 0 10px 10px;
     background-color: white;
     padding: 12px 12px;
@@ -349,172 +354,4 @@ html, main {
 }
 main {
     flex-grow: 1;
-}
-@media (max-width:1231px){
-    .square{
-        aspect-ratio: 3.5 / 1;
-    }
-    .gongu_title {
-        font-size: 1.25rem;
-    }
-    .gongu_date {
-        gap: 10px;
-        font-size: 1rem;
-        margin-top: 10px;
-    }    
-    .gongu_progress {
-        width: 100%;
-        height: 9px;
-        border-radius: 10px;
-    }    
-    .gongu_bottom{
-        margin-top: 16px;
-    }
-}
-@media (max-width:900px){
-    .search_value {
-        min-width: clamp(25rem, 6vw + 1rem, 32.375rem);
-        height: clamp(3rem, 6vw + 1rem, 3.3125rem);
-    }
-    .circle_category_wrap {
-        grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
-    }
-    .circle_category_wrap {
-        padding: 1.25rem 0;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    .circle_with_text {
-        width: clamp(5.25rem, 6vw + 0.25rem, 6.25rem);
-    }
-    .circle {
-        width: clamp(5.25rem, 6vw + 0.25rem, 6.25rem);
-        height: clamp(5.25rem, 6vw + 0.25rem, 6.25rem);
-    }
-    .circle img {
-        width: clamp(2.75rem, 6vw + 0.25rem, 3.1875rem);;
-    }
-    .search_btn {
-        height: clamp(3rem, 6vw + 1rem, 3.3125rem);
-    }
-    .circle_text {
-        font-size: 1rem;
-    }
-    .gongu_title {
-        font-size: 1.125rem;
-    }
-    .gongu_date {
-        gap: 10px;
-        font-size: 0.875rem;
-        margin-top: 8px;
-    }    
-    .gongu_progress {
-        width: 100%;
-        height: 9px;
-        border-radius: 10px;
-    } 
-    .gongu_bottom{
-        margin-top: 5px;
-    }
-}
-@media (max-width:823px) {
-    .square{
-        aspect-ratio: 5 / 1;
-    }
-}
-@media (max-width:700px) {
-    .search_value {
-        min-width: clamp(22rem, 6vw + 1rem, 25rem);
-    }
-    .search_text {
-        font-size: 1.6rem;
-    }
-    .circle_category_wrap {
-        grid-template-columns: repeat(auto-fit, minmax(5.25rem, 1fr));
-    }
-    .circle_category_wrap {
-        padding: 1.25rem 0;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    .circle_with_text {
-        width: clamp(4.25rem, 6vw + 0.25rem, 5.25rem);
-    }
-    .circle {
-        width: clamp(4.25rem, 6vw + 0.25rem, 5.25rem);
-        height: clamp(4.25rem, 6vw + 0.25rem, 5.25rem);
-        box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.2);
-    }
-    .circle img {
-        width: clamp(2.5rem, 6vw + 0.25rem, 3rem);;
-    }
-    .circle_text {
-        font-size: 0.9rem;
-    }
-    .body_container {
-        padding: 3.5rem 1.25rem 0 1.25rem;
-    }
-    .gongu_list_wrap{
-        padding-bottom: clamp(3.75rem, 6vw + 1rem, 6.25rem);
-    }
-    .gongu_wrap{
-        padding-top: clamp(3.75rem, 6vw + 1rem, 5rem);
-    }
-}
-@media (max-width:500px){
-    .search_value {
-        min-width: clamp(17rem, 6vw + 1rem, 20rem);
-    }
-    .search_text {
-        font-size: 1.4rem;
-    }
-    .circle_category_wrap {
-        grid-template-columns: repeat(auto-fit, minmax(3.7rem, 1fr));
-    }
-    .circle_category_wrap {
-        padding: 1.25rem 0;
-        gap: 0.8rem;
-        flex-wrap: wrap;
-    }
-    
-    .circle_with_text {
-        width: clamp(3.7rem, 6vw + 0.25rem, 4.25rem);
-    }
-    .circle {
-        width: clamp(3.7rem, 6vw + 0.25rem, 4.25rem);
-        height: clamp(3.7rem, 6vw + 0.25rem, 4.25rem);
-        box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
-    }
-    .circle img {
-        width: clamp(1.75rem, 6vw + 0.25rem, 2.5rem);;
-    }
-    
-    .circle_text {
-        font-size: 0.75rem;
-    }
-    .food_category{
-        font-size: 1.5rem;
-    }
-    .gongu_list{
-        font-size: 1.5rem;
-    }
-    .popular_text{
-        font-size: 1.5rem;
-    }
-    .body_container {
-        padding: 2.5rem 1.25rem 0 1.25rem;
-    }
-}
-@media (max-width:450px){
-    .circle_category_wrap {
-        grid-template-columns: repeat(auto-fit, minmax(3.3rem, 1fr));
-    }
-    .circle_with_text {
-        width: clamp(3.3rem, 6vw + 0.25rem, 3.7rem);
-    }
-    .circle {
-        width: clamp(3.3rem, 6vw + 0.25rem, 3.7rem);
-        height: clamp(3.3rem, 6vw + 0.25rem, 3.7rem);
-        box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
-    }
 }
