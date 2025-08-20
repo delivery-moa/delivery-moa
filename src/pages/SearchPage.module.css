@@ -142,11 +142,11 @@
     height: 35px;
     border-radius: 10px;
     background-color: white;
-    border: 1px solid #FF6B6B;
-    color: #FF6B6B;
+    border: 1px solid #640b5d;
+    color: #640b5d;
     font-size: 18px;
 }
 .more button:hover{
-    background-color: #FF6B6B;
+    background-color: #640b5d;
     color: white;
 }

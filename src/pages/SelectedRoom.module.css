@@ -100,11 +100,11 @@
     box-sizing: border-box;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid #FF6B6B;
-    color: #FF6B6B;
+    border: 1px solid #640b5d;
+    color: #640b5d;
     width: 100px;
 }
 .result_btn:hover{
-    background-color: #FF6B6B;
+    background-color: #640b5d;
     color: white;
 }

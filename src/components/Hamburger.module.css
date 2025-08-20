@@ -50,7 +50,7 @@
 }
 
 .userName_btn {
-    border: 2px solid #FF6B6B;
+    border: 2px solid #640b5d;
     background-color: white;
     border-radius: 10px;
     color: black;
@@ -119,11 +119,11 @@
 }
 
 .gongu_progress::-webkit-progress-value {
-    background-color: #FF6B6B;
+    background-color: #640b5d;
 }
 
 .gongu_progress::-moz-progress-bar {
-    background-color: #FF6B6B;
+    background-color: #640b5d;
 }
 
 .chat_list {

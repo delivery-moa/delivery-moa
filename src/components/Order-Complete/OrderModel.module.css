@@ -23,7 +23,7 @@ body {
 
 .header i {
     font-size: 60px;
-    color: #FF6B6B;
+    color: #640b5d;
     margin-bottom: 15px;
 }
 
@@ -98,13 +98,13 @@ body {
 }
 
 .btn-primary {
-    background-color: #FFB1B1;
+    background-color: #b65fb0;
     color: black;
     margin-right: 10px;
 }
 
 .btn-primary:hover {
-    background-color: #FF6B6B;
+    background-color: #640b5d;
 }
 
 .btn-secondary {

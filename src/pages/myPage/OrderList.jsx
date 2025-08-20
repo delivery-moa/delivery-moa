@@ -127,7 +127,7 @@ export default function OrderList() {
                   <span
                     style={{
                       marginLeft: 10,
-                      color: "#ff6b6b",
+                      color: "#640b5d",
                       fontSize: "0.95rem",
                     }}
                   >

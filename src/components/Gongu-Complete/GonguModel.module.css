@@ -18,7 +18,7 @@
 
 .header i {
     font-size: 60px;
-    color: #FF6B6B;
+    color: #640b5d;
     margin-bottom: 15px;
 }
 
@@ -71,7 +71,7 @@
     color: #666;
 }
 .button {
-    background-color: #FFB1B1;
+    background-color: #b65fb0;
     color: black;
     border: none;
     padding: 12px 20px;
@@ -86,7 +86,7 @@
 }
 
 .button:hover {
-    background-color: #FF6B6B;
+    background-color: #640b5d;
 }
 
 .buttonSecondary {

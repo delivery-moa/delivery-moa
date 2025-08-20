@@ -123,8 +123,8 @@
     margin-bottom: 50px;
 }
 .menu_make_btn{
-    border: 1px solid #FF6B6B;
-    color: #FF6B6B;
+    border: 1px solid #640b5d;
+    color: #640b5d;
     background-color: white;
     height: 80px;
     width: 530px;
@@ -133,8 +133,8 @@
     cursor: pointer;
 }
 .menu_confirm_btn{
-    border: 1px solid #FF6B6B;
-    color: #FF6B6B;
+    border: 1px solid #640b5d;
+    color: #640b5d;
     background-color: white;
     height: 80px;
     width: 530px;
@@ -143,10 +143,10 @@
     cursor: pointer;
 }
 .menu_make_btn:hover{
-    background-color: #FF6B6B;
+    background-color: #640b5d;
     color: white;
 }
 .menu_confirm_btn:hover{
-    background-color: #FF6B6B;
+    background-color: #640b5d;
     color: white;
 }

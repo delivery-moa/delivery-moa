@@ -64,7 +64,7 @@
   margin-top: 32px;
   width: 100%;
   padding: 12px;
-  background-color: #FFB1B1;
+  background-color: #b65fb0;
   color: black;
   border: none;
   border-radius: 8px;
@@ -73,5 +73,5 @@
 }
 
 .submitBtn:hover {
-  background-color: #FF6B6B;
+  background-color: #640b5d;
 }
