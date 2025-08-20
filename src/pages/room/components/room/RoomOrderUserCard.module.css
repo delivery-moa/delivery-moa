@@ -17,9 +17,9 @@
     font-size: 14px;
     background-color: white;
     box-sizing: border-box;
-    border: #FF6B6B solid 1px;
+    border: #640b5d solid 1px;
     border-radius: 9999px;
-    color: #FF6B6B;
+    color: #640b5d;
 }
 .end_recruit_button:hover,.order_button:hover,.leader_mark:hover,.pick_up_button:hover,.room_end_button:hover {
     padding-left: 8px;
@@ -31,7 +31,7 @@
     cursor: pointer;
     box-sizing: border-box;
     border-radius: 9999px;
-    background-color: #FF6B6B;
+    background-color: #640b5d;
     color: white;
 }
 .leader_mark {

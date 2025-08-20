@@ -44,7 +44,7 @@ input[type="number"] {
   margin: 0;
   font-weight: 700;
   font-size: 22px;
-  color: #ff6b6b; /* 포인트 컬러 */
+  color: #640b5d; /* 포인트 컬러 */
 }
 
 .reserve {
@@ -60,7 +60,7 @@ input[type="number"] {
 }
 
 .logo {
-  background: #ff6b6b;
+  background: #640b5d;
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -103,19 +103,19 @@ input[type="number"] {
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-  color: #ff6b6b;
+  color: #640b5d;
   transition: background 0.2s, border 0.2s;
 }
 .presetButton:active {
   background: #ffb6b6;
-  border-color: #ff6b6b;
+  border-color: #640b5d;
 }
 
 .amountInput {
   width: 390px;
   font-size: 20px;
   padding: 14px;
-  border: 1.5px solid #ff6b6b;
+  border: 1.5px solid #640b5d;
   border-radius: 8px;
   margin-bottom: 22px;
   outline: none;
@@ -143,7 +143,7 @@ input[type="number"] {
 .chargeButton {
   width: 100%;
   padding: 16px;
-  background: #ff6b6b;
+  background: #640b5d;
   color: #fff;
   font-weight: 700;
   font-size: 18px;

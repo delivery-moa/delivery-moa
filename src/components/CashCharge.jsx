@@ -98,7 +98,7 @@ export default function CashCharge() {
         }}
       >
         현재 보유 캐시:{" "}
-        <span style={{ color: "#FF6B6B" }}>
+        <span style={{ color: "#640b5d" }}>
           {currentCash.toLocaleString()} 원
         </span>
       </div>

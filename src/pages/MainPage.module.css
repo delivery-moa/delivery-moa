@@ -8,7 +8,7 @@ html, main {
 }
 
 .search_header {
-    background-color: #FF6B6B;
+    background-color: #640b5d;
     width: 100vw;
     height: 180px;
     display: flex;
@@ -108,7 +108,7 @@ html, main {
 }
 
 .food_category_move {
-    color: #FF6B6B;
+    color: #640b5d;
     cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ html, main {
 }
 
 .gongu_list_move {
-    color: #FF6B6B;
+    color: #640b5d;
     cursor: pointer;
 }
 
@@ -262,11 +262,11 @@ html, main {
 }
 
 .gongu_progress::-webkit-progress-value {
-    background-color: #FFB1B1;
+    background-color: #b65fb0;
     border-radius: 10px;
 }
 .gongu_progress::-moz-progress-bar {
-    background-color: #FFB1B1;
+    background-color: #b65fb0;
     border-radius: 10px;
 }
 .gongu_bottom{

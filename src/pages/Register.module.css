@@ -44,7 +44,7 @@
 .register_table button {
     padding: 8px 12px;
     margin-left: 10px;
-    background-color: #ffb1b1;
+    background-color: #b65fb0;
     color: black;
     border: none;
     border-radius: 10px;
@@ -73,7 +73,7 @@
 }
 
 .register_button button:last-child {
-    background-color: #ffb1b1;
+    background-color: #b65fb0;
 }
 
 
